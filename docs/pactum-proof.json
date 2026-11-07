@@ -1,0 +1,1020 @@
+{
+  "project": "PACTUM — Autonomous AI Agent for Paying Digital Services",
+  "tagline": "Intelligence in Motion. Trust in Every Transaction.",
+  "generatedAt": "2026-11-07T12:20:51.771Z",
+  "network": "Stellar Testnet",
+  "baseUrl": "http://localhost:3000",
+  "app": {
+    "mode": "live",
+    "policy": {
+      "totalBudget": 500,
+      "perTxCap": 5,
+      "asset": "USDC",
+      "allowedMerchants": [
+        "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO"
+      ],
+      "allowedServiceIds": [
+        "nebula-ai",
+        "vectorly",
+        "axiom-cloud",
+        "ledgerdb",
+        "nameforge",
+        "horizon-gpu"
+      ],
+      "autoApprove": true,
+      "expiresAt": "2026-12-07T12:05:39.000Z",
+      "updatedAt": "2026-11-07T12:08:38.711Z",
+      "onchainTxHash": "ef5cd4a50ca775911788b26a2a1d4c6a4a5671b282d012c1f251545102ce4752"
+    },
+    "identity": {
+      "mode": "live",
+      "network": "testnet",
+      "ownerAddress": "GB3SSV7PWTSIHVYICX2OGPNNHVLI26JCJBZXUFGPSDGMWJSWXXAP2RKW",
+      "agentAddress": "GD537TTWDOTBPPV6E7LSYYWU65QSPPXELMD6AR6CE72WQGII6M44OGOT",
+      "merchantAddress": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+      "deviceHash": "dc0067a5f16aa04e15144f76a7c617aa567eaf1e55966c4a72a270deb97d030e",
+      "deviceLabel": "PACTUM Agent Pass · live Testnet",
+      "assetCode": "USDC",
+      "assetIssuer": "GCOP7J46QPYFOGFODOOQMFTLZZG6CMLMCJVOFBSYNWMRTQHZSSWS2R2C",
+      "assetSac": "CAENVXKI3D63QBG3SU4IQ227YLQ3RER2ULIVXNWHZRVROQAOF7NZKZMG",
+      "escrowBalance": 106.75,
+      "escrowToken": "CAENVXKI3D63QBG3SU4IQ227YLQ3RER2ULIVXNWHZRVROQAOF7NZKZMG",
+      "policyOnchain": true,
+      "createdAt": "2026-11-07T12:00:43.146Z",
+      "bootstrapTxHashes": {
+        "friendbotOwner": "0e9e1b3b0abb8a2a9c12b7fbf725a7fce6b931d6f57e912d6c35dd916a9fcc7b",
+        "friendbotAgent": "6cc07d96868805c4bf8cc4968cfde8db434983ff922fb68a29158dc21833bff8",
+        "friendbotMerchant": "f82a876e498809e54e471629e3dd5cef2df343e550743e124adce7d994202317",
+        "friendbotIssuer": "e1e631cf4879a2cf120e5d768e2defc9cd88fa5e4ad28466c15fa2dc97fe3c34",
+        "trustlines": "89dc9629259ac290b88e95bb47c00d4ef92d31eab6f67853cb5e3d91c77c0a32",
+        "createSac": "eec8e7e32c185d94f869c33dc6ae74ccf65757a4face2fd7b7fcef26fda8895f",
+        "registerDevice": "0e12ff236ae594658eb903c9ecd9c6b54a787f2e9c6ba102b60672fb6a0c69ab",
+        "registerAgent": "24b83d8e940bf706b728b7e47194d70126fa6dd33df83dcab74f8f6992007d7f",
+        "fundEscrow": "27680a907f4769cb0a0475b4ab6a4ca03cceab91bb415b712b03bb1f9f33e1e6"
+      }
+    },
+    "transactions": [
+      {
+        "id": "0c27e7cf-63d6-4b89-933a-c3b8160e1a01",
+        "createdAt": "2026-11-07T12:19:41.193Z",
+        "updatedAt": "2026-11-07T12:20:08.792Z",
+        "serviceId": "ledgerdb",
+        "serviceName": "LedgerDB",
+        "category": "Managed Database",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Ledger Data Co.",
+        "amount": 3.25,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Provision a managed Postgres database for our audit log.",
+        "rationale": "LedgerDB is the best fit for the request at 3.25 USDC — inside 5.00 USDC and within the remaining 490.00 USDC budget. Compared against Axiom Cloud at 4.50 USDC.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of managed database.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:41.193Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:41.193Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "LedgerDB is the best fit for the request at 3.25 USDC — inside 5.00 USDC and within the remaining 490.00 USDC budget. Compared against Axiom Cloud at 4.50 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:41.193Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 3.25 USDC ≤ 5.00 USDC per-payment cap · 486.75 USDC budget remains after this payment · Merchant Ledger Data Co. is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:19:41.193Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:43.762Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:20:08.792Z",
+            "txHash": "bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:20:08.792Z",
+            "txHash": "f237bbfb24f94591b6486767db7d66d840743f5b3ce4d3b0678d83d509b35f21",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/f237bbfb24f94591b6486767db7d66d840743f5b3ce4d3b0678d83d509b35f21"
+          }
+        ],
+        "policyChecks": [
+          "Amount 3.25 USDC ≤ 5.00 USDC per-payment cap",
+          "486.75 USDC budget remains after this payment",
+          "Merchant Ledger Data Co. is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "f237bbfb24f94591b6486767db7d66d840743f5b3ce4d3b0678d83d509b35f21",
+        "noirClaimTxHash": "bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+        "error": null,
+        "simulated": false
+      },
+      {
+        "id": "e38aaf1e-09f9-4e03-bbad-77ddbe73e8f1",
+        "createdAt": "2026-11-07T12:19:31.600Z",
+        "updatedAt": "2026-11-07T12:19:34.683Z",
+        "serviceId": "horizon-gpu",
+        "serviceName": "Horizon GPU",
+        "category": "GPU Compute",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Horizon Compute",
+        "amount": 8,
+        "asset": "USDC",
+        "rail": "velo",
+        "status": "blocked",
+        "prompt": "Try to buy a 50 USDC GPU cluster for one hour.",
+        "rationale": "Horizon GPU is the closest catalog match at 8.00 USDC. The policy preflight will decide whether it can be purchased.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of gpu compute.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:31.600Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:31.600Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Horizon GPU is the closest catalog match at 8.00 USDC. The policy preflight will decide whether it can be purchased.",
+            "status": "complete",
+            "at": "2026-11-07T12:19:31.600Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy blocked the payment",
+            "detail": "8.00 USDC exceeds the 5.00 USDC per-payment cap. Noir AgentRegistry.check_payment refused: the amount is over the on-chain per-payment limit.",
+            "status": "blocked",
+            "at": "2026-11-07T12:19:34.683Z"
+          },
+          {
+            "id": "noir-check",
+            "label": "Noir on-chain check",
+            "detail": "Noir AgentRegistry.check_payment refused: the amount is over the on-chain per-payment limit.",
+            "status": "blocked",
+            "at": "2026-11-07T12:19:34.683Z"
+          },
+          {
+            "id": "execution",
+            "label": "Execution stopped",
+            "detail": "No funds moved.",
+            "status": "blocked"
+          }
+        ],
+        "policyChecks": [],
+        "noirTxHash": null,
+        "noirClaimTxHash": null,
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": null,
+        "explorerUrl": null,
+        "error": "8.00 USDC exceeds the 5.00 USDC per-payment cap. Noir AgentRegistry.check_payment refused: the amount is over the on-chain per-payment limit.",
+        "simulated": false
+      },
+      {
+        "id": "19402a13-fdd7-40be-b069-78d12a105232",
+        "createdAt": "2026-11-07T12:15:56.996Z",
+        "updatedAt": "2026-11-07T12:16:28.579Z",
+        "serviceId": "nebula-ai",
+        "serviceName": "Nebula AI",
+        "category": "AI Inference API",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Nebula Labs",
+        "amount": 2,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Buy an affordable AI API subscription under 5 USDC.",
+        "rationale": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 492.00 USDC budget. Compared against Vectorly at 1.20 USDC and NameForge at 1.75 USDC.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of ai inference api.",
+            "status": "complete",
+            "at": "2026-11-07T12:15:56.996Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:15:56.996Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 492.00 USDC budget. Compared against Vectorly at 1.20 USDC and NameForge at 1.75 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:15:56.996Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap · 490.00 USDC budget remains after this payment · Merchant Nebula Labs is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:15:56.996Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:16:01.338Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:16:28.579Z",
+            "txHash": "f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:16:28.579Z",
+            "txHash": "4a09082caba38a509e214052cb9131fc4ec444abebcb21569728d9edfd409931",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/4a09082caba38a509e214052cb9131fc4ec444abebcb21569728d9edfd409931"
+          }
+        ],
+        "policyChecks": [
+          "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap",
+          "490.00 USDC budget remains after this payment",
+          "Merchant Nebula Labs is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "4a09082caba38a509e214052cb9131fc4ec444abebcb21569728d9edfd409931",
+        "noirClaimTxHash": "f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+        "error": null,
+        "simulated": false
+      },
+      {
+        "id": "0e31e3b3-89ed-49f0-9b58-0837bfa4899e",
+        "createdAt": "2026-11-07T12:13:24.001Z",
+        "updatedAt": "2026-11-07T12:13:53.681Z",
+        "serviceId": "nebula-ai",
+        "serviceName": "Nebula AI",
+        "category": "AI Inference API",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Nebula Labs",
+        "amount": 2,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Try to buy a 50 USDC GPU cluster for one hour.",
+        "rationale": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 494.00 USDC budget.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of ai inference api.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:24.001Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:24.001Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 494.00 USDC budget.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:24.001Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap · 492.00 USDC budget remains after this payment · Merchant Nebula Labs is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:13:24.001Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:27.220Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:53.681Z",
+            "txHash": "cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:13:53.681Z",
+            "txHash": "b8f3d029b1ec78dcd46657af20c5e7e180e9c1002323fd2b5a793c81c306c3b4",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/b8f3d029b1ec78dcd46657af20c5e7e180e9c1002323fd2b5a793c81c306c3b4"
+          }
+        ],
+        "policyChecks": [
+          "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap",
+          "492.00 USDC budget remains after this payment",
+          "Merchant Nebula Labs is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "b8f3d029b1ec78dcd46657af20c5e7e180e9c1002323fd2b5a793c81c306c3b4",
+        "noirClaimTxHash": "cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+        "error": null,
+        "simulated": false
+      },
+      {
+        "id": "97462d0e-5db6-462b-88d7-2f7fe811ade3",
+        "createdAt": "2026-11-07T12:10:51.881Z",
+        "updatedAt": "2026-11-07T12:11:28.062Z",
+        "serviceId": "nebula-ai",
+        "serviceName": "Nebula AI",
+        "category": "AI Inference API",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Nebula Labs",
+        "amount": 2,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Try to buy a 50 USDC GPU cluster for one hour.",
+        "rationale": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 478.25 USDC budget.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of ai inference api.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:51.881Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:51.881Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 478.25 USDC budget.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:51.881Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap · 476.25 USDC budget remains after this payment · Merchant Nebula Labs is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:10:51.881Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:58.735Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:11:28.062Z",
+            "txHash": "d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:11:28.062Z",
+            "txHash": "0ce822c0cd04ba01cb45d3a22da58bba183d6b796adf32203a004d369a8b02f9",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/0ce822c0cd04ba01cb45d3a22da58bba183d6b796adf32203a004d369a8b02f9"
+          }
+        ],
+        "policyChecks": [
+          "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap",
+          "476.25 USDC budget remains after this payment",
+          "Merchant Nebula Labs is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "0ce822c0cd04ba01cb45d3a22da58bba183d6b796adf32203a004d369a8b02f9",
+        "noirClaimTxHash": "d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+        "error": null,
+        "simulated": false
+      },
+      {
+        "id": "b3b61fee-7d73-44dd-8de8-41a54d233f03",
+        "createdAt": "2026-11-07T12:09:31.437Z",
+        "updatedAt": "2026-11-07T12:10:01.701Z",
+        "serviceId": "nebula-ai",
+        "serviceName": "Nebula AI",
+        "category": "AI Inference API",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Nebula Labs",
+        "amount": 2,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Try to buy a 50 USDC GPU cluster for one hour.",
+        "rationale": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 480.25 USDC budget.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of ai inference api.",
+            "status": "complete",
+            "at": "2026-11-07T12:09:31.437Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:09:31.437Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 480.25 USDC budget.",
+            "status": "complete",
+            "at": "2026-11-07T12:09:31.437Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap · 478.25 USDC budget remains after this payment · Merchant Nebula Labs is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:09:31.437Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:09:34.163Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:01.701Z",
+            "txHash": "edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:10:01.701Z",
+            "txHash": "282b40223059c53996713887a3d1235aa6327b9ef57a9d0d9082173c2e4aab33",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/282b40223059c53996713887a3d1235aa6327b9ef57a9d0d9082173c2e4aab33"
+          }
+        ],
+        "policyChecks": [
+          "Amount 2.00 USDC ≤ 5.00 USDC per-payment cap",
+          "478.25 USDC budget remains after this payment",
+          "Merchant Nebula Labs is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "282b40223059c53996713887a3d1235aa6327b9ef57a9d0d9082173c2e4aab33",
+        "noirClaimTxHash": "edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+        "error": null,
+        "simulated": false
+      },
+      {
+        "id": "4f8e1750-6ba3-4447-a8b8-63a982bfb272",
+        "createdAt": "2026-11-07T12:06:28.502Z",
+        "updatedAt": "2026-11-07T12:07:00.746Z",
+        "serviceId": "nebula-ai",
+        "serviceName": "Nebula AI",
+        "category": "AI Inference API",
+        "merchant": "GDCVTZG4T7HGJ373QHCSDJEMJVDY5THIPXK7N5B3ITU4ZJ5EBFANWTPO",
+        "merchantName": "Nebula Labs",
+        "amount": 2,
+        "asset": "USDC",
+        "rail": "noir",
+        "status": "settled",
+        "prompt": "Buy an affordable AI API subscription under 5 USDC.",
+        "rationale": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 488.50 USDC budget. Compared against Vectorly at 1.20 USDC and NameForge at 1.75 USDC.",
+        "steps": [
+          {
+            "id": "intent",
+            "label": "Intent parsed",
+            "detail": "Request understood as a purchase of ai inference api.",
+            "status": "complete",
+            "at": "2026-11-07T12:06:28.503Z"
+          },
+          {
+            "id": "discover",
+            "label": "Marketplace scanned",
+            "detail": "6 approved services compared; 3 alternatives rejected.",
+            "status": "complete",
+            "at": "2026-11-07T12:06:28.503Z"
+          },
+          {
+            "id": "evaluate",
+            "label": "Service selected",
+            "detail": "Nebula AI is the best fit for the request at 2.00 USDC — inside 5.00 USDC and within the remaining 488.50 USDC budget. Compared against Vectorly at 1.20 USDC and NameForge at 1.75 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:06:28.503Z"
+          },
+          {
+            "id": "policy",
+            "label": "Policy preflight",
+            "detail": "Amount 2.00 USDC ≤ 10.00 USDC per-payment cap · 486.50 USDC budget remains after this payment · Merchant Nebula Labs is approved · Service category is approved · Policy is active and unexpired · Policy is published on Noir AgentRegistry",
+            "status": "complete",
+            "at": "2026-11-07T12:06:28.503Z"
+          },
+          {
+            "id": "authorize",
+            "label": "Agent authorization",
+            "detail": "Agent authorization verified. Executing the escrow payment.",
+            "status": "complete",
+            "at": "2026-11-07T12:06:33.014Z"
+          },
+          {
+            "id": "settle",
+            "label": "Noir escrow settled",
+            "detail": "PaymentEscrow.authorize() debited the escrow and the merchant claim settled the funds on Stellar Testnet.",
+            "status": "complete",
+            "at": "2026-11-07T12:07:00.746Z",
+            "txHash": "524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360"
+          },
+          {
+            "id": "claim",
+            "label": "Merchant claim confirmed",
+            "detail": "Pending merchant balance moved from 0 to 0 USDC.",
+            "status": "complete",
+            "at": "2026-11-07T12:07:00.746Z",
+            "txHash": "be64ab2a5eb0422f5c630edfe76e3df35e67669a4bed380ef0edd5df90c3dd46",
+            "explorerUrl": "https://stellar.expert/explorer/testnet/tx/be64ab2a5eb0422f5c630edfe76e3df35e67669a4bed380ef0edd5df90c3dd46"
+          }
+        ],
+        "policyChecks": [
+          "Amount 2.00 USDC ≤ 10.00 USDC per-payment cap",
+          "486.50 USDC budget remains after this payment",
+          "Merchant Nebula Labs is approved",
+          "Service category is approved",
+          "Policy is active and unexpired",
+          "Policy is published on Noir AgentRegistry"
+        ],
+        "noirTxHash": "be64ab2a5eb0422f5c630edfe76e3df35e67669a4bed380ef0edd5df90c3dd46",
+        "noirClaimTxHash": "524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+        "veloPaymentIntentId": null,
+        "veloCheckoutUrl": null,
+        "stellarTxHash": "524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+        "error": null,
+        "simulated": false
+      }
+    ],
+    "audit": [
+      {
+        "id": "cc0ac1e9-faf5-4382-9fc6-82c7eec7801e",
+        "at": "2026-11-07T12:20:08.793Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "LedgerDB · 3.25 USDC paid to Ledger Data Co. through the Noir escrow rail.",
+        "txHash": "bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445",
+        "level": "success"
+      },
+      {
+        "id": "cb9b61a8-e3d8-4e9a-9153-10844a37f8ac",
+        "at": "2026-11-07T12:19:41.195Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "LedgerDB for 3.25 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "b4f17be9-f7a1-4b38-89be-e05446f36f34",
+        "at": "2026-11-07T12:19:34.684Z",
+        "kind": "policy",
+        "title": "Payment blocked by policy",
+        "detail": "Horizon GPU · 8.00 USDC exceeds the 5.00 USDC per-payment cap.",
+        "level": "warn"
+      },
+      {
+        "id": "def4dc6e-ad79-4e21-b1e4-fa0ece15144d",
+        "at": "2026-11-07T12:16:28.581Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "Nebula AI · 2.00 USDC paid to Nebula Labs through the Noir escrow rail.",
+        "txHash": "f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198",
+        "level": "success"
+      },
+      {
+        "id": "d34d5865-ea70-40c3-b8ef-fdc516b13e8a",
+        "at": "2026-11-07T12:15:56.997Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Nebula AI for 2.00 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "44cb345a-4c96-4bd6-836e-7056e7cc665f",
+        "at": "2026-11-07T12:15:51.583Z",
+        "kind": "policy",
+        "title": "Payment blocked by policy",
+        "detail": "Horizon GPU · 8.00 USDC exceeds the 5.00 USDC per-payment cap.",
+        "level": "warn"
+      },
+      {
+        "id": "0af54233-8c65-4697-a544-17fc5fb05671",
+        "at": "2026-11-07T12:13:53.683Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "Nebula AI · 2.00 USDC paid to Nebula Labs through the Noir escrow rail.",
+        "txHash": "cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018",
+        "level": "success"
+      },
+      {
+        "id": "9356260f-7226-43f2-91e0-8ece79c25fab",
+        "at": "2026-11-07T12:13:24.003Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Nebula AI for 2.00 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "e43679c8-af53-4001-ae8b-419563da2d56",
+        "at": "2026-11-07T12:11:28.064Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "Nebula AI · 2.00 USDC paid to Nebula Labs through the Noir escrow rail.",
+        "txHash": "d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23",
+        "level": "success"
+      },
+      {
+        "id": "2ecc1057-fcbe-4c1a-a320-6e826c4fafd2",
+        "at": "2026-11-07T12:10:51.883Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Nebula AI for 2.00 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "c5afdbf1-d5ea-45c9-8733-19b80b1d146a",
+        "at": "2026-11-07T12:10:01.703Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "Nebula AI · 2.00 USDC paid to Nebula Labs through the Noir escrow rail.",
+        "txHash": "edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677",
+        "level": "success"
+      },
+      {
+        "id": "f2c8c92c-dd23-4099-9092-e60d432d56c0",
+        "at": "2026-11-07T12:09:31.439Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Nebula AI for 2.00 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "92187ecb-c462-4ad9-b400-48a40daaf2f7",
+        "at": "2026-11-07T12:09:06.432Z",
+        "kind": "velo",
+        "title": "Velo sandbox checkout created",
+        "detail": "NameForge · 1.75 USDC · pi_sandbox_661d9fa2-537",
+        "level": "info"
+      },
+      {
+        "id": "c551563f-8ee9-4f24-98e6-fb89f78986c3",
+        "at": "2026-11-07T12:09:03.236Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "NameForge for 1.75 USDC via the velo rail.",
+        "level": "info"
+      },
+      {
+        "id": "f5800511-baaa-4149-8d0b-a9693db4222d",
+        "at": "2026-11-07T12:08:57.364Z",
+        "kind": "policy",
+        "title": "Spending policy updated",
+        "detail": "500.00 USDC budget · 5.00 USDC per payment · auto-approve on.",
+        "txHash": "ef5cd4a50ca775911788b26a2a1d4c6a4a5671b282d012c1f251545102ce4752",
+        "level": "success"
+      },
+      {
+        "id": "ba46dede-be21-4c07-ab53-5b47abea548d",
+        "at": "2026-11-07T12:07:26.019Z",
+        "kind": "velo",
+        "title": "Velo sandbox payment settled",
+        "detail": "Axiom Cloud · 4.50 USDC",
+        "txHash": "0766126d1b9b97250ede59ac8d5b322652905242e8b469248e8e44886614631c",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/0766126d1b9b97250ede59ac8d5b322652905242e8b469248e8e44886614631c",
+        "level": "success"
+      },
+      {
+        "id": "b3a42147-a9a7-4d99-aa71-6f4c5dc7ef66",
+        "at": "2026-11-07T12:07:23.051Z",
+        "kind": "velo",
+        "title": "Velo sandbox checkout created",
+        "detail": "Axiom Cloud · 4.50 USDC · pi_sandbox_e6d4c42c-435",
+        "level": "info"
+      },
+      {
+        "id": "df36c317-8189-4c51-974d-6fe469381734",
+        "at": "2026-11-07T12:07:17.843Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Axiom Cloud for 4.50 USDC via the velo rail.",
+        "level": "info"
+      },
+      {
+        "id": "3a0c223e-0e4d-4cfc-922d-a0eae4a374c9",
+        "at": "2026-11-07T12:07:00.749Z",
+        "kind": "stellar",
+        "title": "Autonomous payment settled",
+        "detail": "Nebula AI · 2.00 USDC paid to Nebula Labs through the Noir escrow rail.",
+        "txHash": "524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360",
+        "level": "success"
+      },
+      {
+        "id": "bd3c5c82-b577-4c27-9ffe-9c946a3ddfc1",
+        "at": "2026-11-07T12:06:28.506Z",
+        "kind": "agent",
+        "title": "Agent selected a service",
+        "detail": "Nebula AI for 2.00 USDC via the noir rail.",
+        "level": "info"
+      },
+      {
+        "id": "cbc9e11e-af8d-4bf8-806d-d744858bdf82",
+        "at": "2026-11-07T12:06:14.910Z",
+        "kind": "system",
+        "title": "PACTUM is live on Stellar Testnet",
+        "detail": "Owner GB3SSV7P… controls the vault. The agent key can only spend within the on-chain policy.",
+        "level": "success"
+      },
+      {
+        "id": "4aa83394-9d52-4880-b791-90485bf23ab0",
+        "at": "2026-11-07T12:06:14.910Z",
+        "kind": "noir",
+        "title": "Live Testnet vault initialized",
+        "detail": "Device dc0067a5f16a… registered, agent policy published, escrow funded with 120 USDC.",
+        "txHash": "0e12ff236ae594658eb903c9ecd9c6b54a787f2e9c6ba102b60672fb6a0c69ab",
+        "level": "success"
+      },
+      {
+        "id": "0e5449b8-1bce-4e11-9ce9-7876506914f8",
+        "at": "2026-11-05T12:00:43.151Z",
+        "kind": "system",
+        "title": "PACTUM sandbox initialized",
+        "detail": "A local sandbox vault was created. Initialize the Testnet vault to write real state to Noir.",
+        "level": "info"
+      },
+      {
+        "id": "9894cb6c-376b-4882-8f35-1d2e14d58896",
+        "at": "2026-11-06T05:00:43.151Z",
+        "kind": "noir",
+        "title": "Escrow payment authorized",
+        "detail": "The agent authorized 2.00 USDC to Nebula Labs within the on-chain policy.",
+        "txHash": "72b015b267a365d9b49b5bd5b252879b67b8ac5add9b562eef4eabe42cfc48cb",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/72b015b267a365d9b49b5bd5b252879b67b8ac5add9b562eef4eabe42cfc48cb",
+        "level": "success"
+      },
+      {
+        "id": "5b5557f1-cd97-4ed8-8742-18153ed00db4",
+        "at": "2026-11-06T17:00:43.152Z",
+        "kind": "velo",
+        "title": "Velo payment settled",
+        "detail": "Axiom Cloud payment completed through the Velo payment workflow.",
+        "txHash": "c89875ba3ef29be044116ad5c5fefacb4e14f5d05aea953a92d98b999259a562",
+        "explorerUrl": "https://stellar.expert/explorer/testnet/tx/c89875ba3ef29be044116ad5c5fefacb4e14f5d05aea953a92d98b999259a562",
+        "level": "success"
+      },
+      {
+        "id": "eafaf5a9-a69e-47a4-ab0b-86ce0f5fa0be",
+        "at": "2026-11-07T06:00:43.152Z",
+        "kind": "policy",
+        "title": "Policy evaluated",
+        "detail": "PACTUM confirmed the agent key, per-payment cap, merchant allowlist and escrow balance.",
+        "level": "info"
+      }
+    ]
+  },
+  "velo": {
+    "configured": false,
+    "environment": "testnet",
+    "baseUrl": "https://www.velo-build.dev",
+    "webhookConfigured": false,
+    "webhookPath": "/api/velo/webhook",
+    "lastPaymentIntentId": "pi_sandbox_661d9fa2-537",
+    "lastCheckoutUrl": null,
+    "lastSessionAt": "2026-11-07T12:09:06.432Z"
+  },
+  "noirProof": {
+    "ok": true,
+    "contracts": {
+      "deviceRegistry": {
+        "reachable": true,
+        "latencyMs": 402
+      },
+      "agentRegistry": {
+        "reachable": true,
+        "latencyMs": 4420
+      },
+      "paymentEscrow": {
+        "reachable": true,
+        "latencyMs": 3873
+      }
+    },
+    "checkedAt": "2026-11-07T12:20:51.767Z"
+  },
+  "onchainArtifacts": [
+    {
+      "group": "bootstrap",
+      "label": "friendbotOwner",
+      "hash": "0e9e1b3b0abb8a2a9c12b7fbf725a7fce6b931d6f57e912d6c35dd916a9fcc7b"
+    },
+    {
+      "group": "bootstrap",
+      "label": "friendbotAgent",
+      "hash": "6cc07d96868805c4bf8cc4968cfde8db434983ff922fb68a29158dc21833bff8"
+    },
+    {
+      "group": "bootstrap",
+      "label": "friendbotMerchant",
+      "hash": "f82a876e498809e54e471629e3dd5cef2df343e550743e124adce7d994202317"
+    },
+    {
+      "group": "bootstrap",
+      "label": "friendbotIssuer",
+      "hash": "e1e631cf4879a2cf120e5d768e2defc9cd88fa5e4ad28466c15fa2dc97fe3c34"
+    },
+    {
+      "group": "bootstrap",
+      "label": "trustlines",
+      "hash": "89dc9629259ac290b88e95bb47c00d4ef92d31eab6f67853cb5e3d91c77c0a32"
+    },
+    {
+      "group": "bootstrap",
+      "label": "createSac",
+      "hash": "eec8e7e32c185d94f869c33dc6ae74ccf65757a4face2fd7b7fcef26fda8895f"
+    },
+    {
+      "group": "bootstrap",
+      "label": "registerDevice",
+      "hash": "0e12ff236ae594658eb903c9ecd9c6b54a787f2e9c6ba102b60672fb6a0c69ab"
+    },
+    {
+      "group": "bootstrap",
+      "label": "registerAgent",
+      "hash": "24b83d8e940bf706b728b7e47194d70126fa6dd33df83dcab74f8f6992007d7f"
+    },
+    {
+      "group": "bootstrap",
+      "label": "fundEscrow",
+      "hash": "27680a907f4769cb0a0475b4ab6a4ca03cceab91bb415b712b03bb1f9f33e1e6"
+    },
+    {
+      "group": "payment",
+      "label": "LedgerDB:authorize",
+      "hash": "f237bbfb24f94591b6486767db7d66d840743f5b3ce4d3b0678d83d509b35f21"
+    },
+    {
+      "group": "payment",
+      "label": "LedgerDB:claim",
+      "hash": "bad01b129c8cbea7bdceb0592c3277a4c96c0d5d74f62df150379ccc653ae445"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:authorize",
+      "hash": "4a09082caba38a509e214052cb9131fc4ec444abebcb21569728d9edfd409931"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:claim",
+      "hash": "f64086d90141d31b17a39c78e93c267bd92a9990029926fd33445f7d681b2198"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:authorize",
+      "hash": "b8f3d029b1ec78dcd46657af20c5e7e180e9c1002323fd2b5a793c81c306c3b4"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:claim",
+      "hash": "cf963d2b61751362ecce929c8f312d1604a845b49f7eb28fb0b82962d4422018"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:authorize",
+      "hash": "0ce822c0cd04ba01cb45d3a22da58bba183d6b796adf32203a004d369a8b02f9"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:claim",
+      "hash": "d9925ffad8f18302cedbe39d1051fdb22b2c6940026d9653d2a21e6e69900b23"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:authorize",
+      "hash": "282b40223059c53996713887a3d1235aa6327b9ef57a9d0d9082173c2e4aab33"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:claim",
+      "hash": "edcbce60d1fb11d7bd2045688ef59cf2ca919073625bd34036b2f5127b630677"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:authorize",
+      "hash": "be64ab2a5eb0422f5c630edfe76e3df35e67669a4bed380ef0edd5df90c3dd46"
+    },
+    {
+      "group": "payment",
+      "label": "Nebula AI:claim",
+      "hash": "524acecc1651bc335d405f59905cecb423810d7a19fce37dcfe01e8743a0d360"
+    },
+    {
+      "group": "policy",
+      "label": "register_agent",
+      "hash": "ef5cd4a50ca775911788b26a2a1d4c6a4a5671b282d012c1f251545102ce4752"
+    }
+  ],
+  "explorerBase": "https://stellar.expert/explorer/testnet/tx/"
+}
