@@ -156,6 +156,17 @@ npm run proof:export
 `verify:live` checks every stored Testnet hash; `proof:export` writes
 `docs/pactum-proof.json` from a running instance.
 
+### Deploy on Render
+
+The repository includes a Render Blueprint with a persistent disk:
+
+[Deploy to Render](https://render.com/deploy?repo=https://github.com/nk-chiwa10/PACTUM-AGENTIC-PAYMENTS)
+
+See [`RENDER.md`](./RENDER.md) for the one-click steps, the Starter-plan disk
+requirement, the free ephemeral alternative and post-deploy checks. A hosted
+instance starts in sandbox and creates its own Testnet vault when you click
+**Go live**.
+
 ---
 
 ## Environment

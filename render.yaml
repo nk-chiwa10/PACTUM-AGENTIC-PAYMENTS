@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: pactum-agent
+    runtime: node
+    plan: starter
+    region: oregon
+    branch: main
+    autoDeploy: true
+    buildCommand: npm ci && npm run build
+    startCommand: npm start -- -H 0.0.0.0 -p $PORT
+    healthCheckPath: /api/state
+    envVars:
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: NOIR_RPC_URL
+        value: https://soroban-testnet.stellar.org
+      - key: NOIR_DEVICE_REGISTRY
+        value: CB4DPMGOA374JIB2ZVD4AHW5GJKQUYNOFGRYNOJ75EFH2KCJSMHOWIRA
+      - key: NOIR_AGENT_REGISTRY
+        value: CBTDMJVCFQDIVWZBKAKZ2FQ3UEJNAAUFYCTJ3E4ON2MYXPLPSIXQ25JZ
+      - key: NOIR_PAYMENT_ESCROW
+        value: CA5S4S7QGHJHJWVJBYL3CXZXZTNGKXMNZVDAEQNN7NUXFP4D7BYK7HIX
+      - key: VELO_ENV
+        value: testnet
+      - key: VELO_BASE_URL
+        value: https://www.velo-build.dev
+      - key: PACTUM_DATA_DIR
+        value: /var/data
+    disk:
+      name: pactum-data
+      mountPath: /var/data
+      sizeGB: 1

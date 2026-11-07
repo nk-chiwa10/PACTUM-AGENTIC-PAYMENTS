@@ -12,7 +12,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 const RPC_URL = process.env.NOIR_RPC_URL ?? "https://soroban-testnet.stellar.org";
-const STATE_FILE = path.resolve(process.cwd(), ".data", "pactum-state.json");
+const DATA_DIR = process.env.PACTUM_DATA_DIR?.trim()
+  ? path.resolve(process.env.PACTUM_DATA_DIR.trim())
+  : path.resolve(process.cwd(), ".data");
+const STATE_FILE = path.join(DATA_DIR, "pactum-state.json");
 
 function hashesFromState() {
   if (!fs.existsSync(STATE_FILE)) {

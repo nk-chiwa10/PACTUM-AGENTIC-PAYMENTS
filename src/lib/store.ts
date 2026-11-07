@@ -12,7 +12,9 @@ import type {
   Transaction,
 } from "./types";
 
-const DATA_DIR = path.join(process.cwd(), ".data");
+const DATA_DIR = process.env.PACTUM_DATA_DIR?.trim()
+  ? path.resolve(process.env.PACTUM_DATA_DIR.trim())
+  : path.join(process.cwd(), ".data");
 const STATE_FILE = path.join(DATA_DIR, "pactum-state.json");
 const WALLET_FILE = path.join(DATA_DIR, "wallet.json");
 
